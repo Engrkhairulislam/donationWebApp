@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+
+      <!-- add DaisyUI library CDN and tailwind css CDN link  start-->
+      <link
+         href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+         rel="stylesheet"
+         type="text/css"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- add DaisyUI library CDN and tailwind css CDN link  end-->
+      <!-- google font add  start-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+         rel="stylesheet"
+      />
+      <!-- google font add end -->
+
+      <!-- css add for custom font  -->
+      <!-- <link rel="stylesheet" href="css/style.css" /> -->
+   </head>
+
+   <body class="lexend-sans my-0 mx-auto items-center">
+      <!-- header section start -->
+      <header id="header-section" class="sticky top-0">
+         <!-- navBar section start -->
+
+         <nav
+            id="idNavBar"
+            class="flex justify-between bg-lime-50 px-6 md:px-12 py-4"
+         >
+            <!-- blog button of nab bar -->
+            <div id="nab-history-blog-button">
+               <div id="btn-history-home-back-home">
+                  <button class="btn">Home</button>
+               </div>
+            </div>
+
+            <!-- Donate Bangladesh section of nab bar start -->
+            <div class="flex items-center text-center gap-2">
+               <!-- site icon -->
+               <li class="list-none">
+                  <img src="assets/logo.png" alt="" srcset="" />
+               </li>
+               <!-- Donate Bangladesh -->
+               <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+            </div>
+
+            <!-- Donate Bangladesh section of nab bar end -->
+
+            <!-- Balance section of nav bar start -->
+            <div class="flex gap-2 text-center items-center">
+               <img src="assets/coin.png" alt="coin icon" srcset="" />
+
+               <h1 id="balance" class="font-medium text-xl">5500</h1>
+               <h1 class="font-medium text-xl">BDT</h1>
+            </div>
+            <!-- Balance section of nav bar start -->
+         </nav>
+         <!-- navBar section stop -->
+         <!-- donation button section start -->
+         <div
+            id="donation-toggole-button-section"
+            class="flex gap-10 items-center text-center justify-center pt-7 pb-4 bg-white"
+         >
+            <div id="btn-donation-to-home-page">
+               <button class="btn text-black bg-lime-400 py-4 px-8">
+                  Donation
+               </button>
+            </div>
+            <div>
+               <button
+                  class="btn text-black bg-white outline outline-1 outline-gray-300 py-4 px-8"
+               >
+                  History
+               </button>
+            </div>
+         </div>
+         <!-- donation button section stop -->
+         <!-- add a horizontal divider -->
+         <div class="divider"></div>
+      </header>
+      <!-- header section stop-->
+      <!-- transaction history -->
+      <main id="main-section" class="px-16 mx-auto pt-3 pb-3 space-y-4">
+         <h1
+            class="font-semibold text-3xl text-center underline underline-offset-2"
+         >
+            Transaction History Of Donations:
+         </h1>
+         <div id="transactionHistory"></div>
+      </main>
+      <footer class="bg-yellow-100 pt-10 pb-10 text-center">
+         <p>All right is reserved by Donate Bangladesh org.</p>
+      </footer>
+      <!-- javascript code file add -->
+
+      <script src="js/history.js"></script>
+   </body>
+</html>

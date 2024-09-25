@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+
+      <!-- add DaisyUI library CDN and tailwind css CDN link  start-->
+      <link
+         href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+         rel="stylesheet"
+         type="text/css"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- add DaisyUI library CDN and tailwind css CDN link  end-->
+      <!-- google font add  start-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+         rel="stylesheet"
+      />
+      <!-- google font add end -->
+
+      <!-- css add for custom font  -->
+      <!-- <link rel="stylesheet" href="css/style.css" /> -->
+   </head>
+
+   <body class="lexend-sans my-0 mx-auto items-center">
+      <!-- header section start -->
+      <header id="header-section" class="sticky top-0">
+         <!-- navBar section start -->
+
+         <nav
+            id="idNavBar"
+            class="flex justify-between bg-lime-50 px-6 md:px-12 py-4"
+         >
+            <!-- blog button of nab bar -->
+            <div class="flex gap-2">
+               <div id="nab-blog-button-back">
+                  <button class="btn text-black bg-lime-400">Blog</button>
+               </div>
+               <div id="btn-home-back">
+                  <button class="btn">Home</button>
+               </div>
+            </div>
+
+            <!-- blog button of nab bar -->
+            <!-- Donate Bangladesh section of nab bar start -->
+            <div class="flex items-center text-center gap-2">
+               <!-- site icon -->
+               <li class="list-none">
+                  <img src="assets/logo.png" alt="" srcset="" />
+               </li>
+               <!-- Donate Bangladesh -->
+               <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+            </div>
+
+            <!-- Donate Bangladesh section of nab bar end -->
+
+            <!-- Balance section of nav bar start -->
+            <div class="flex gap-2 text-center items-center">
+               <img src="assets/coin.png" alt="coin icon" srcset="" />
+
+               <h1 id="balance" class="font-medium text-xl">5500</h1>
+               <h1 class="font-medium text-xl">BDT</h1>
+            </div>
+            <!-- Balance section of nav bar start -->
+         </nav>
+         <!-- navBar section stop -->
+
+         <!-- add a horizontal divider -->
+         <div class="divider"></div>
+      </header>
+      <!-- header section stop-->
+
+      <main id="main-section" class="px-5 md:px-20 mx-auto pt-3 pb-3 space-y-4">
+         <h1 class="font-semibold text-xl">
+            FAQ About Javascript DOM Element:
+         </h1>
+         <!-- 1st question start -->
+         <div class="collapse collapse-arrow">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-base font-medium">
+               What is the full form of DOM ?, and why we use DOM ?
+            </div>
+            <div class="collapse-content">
+               <p>
+                  Full form of DOM is Document Object Model. We use DOM to
+                  dynamically access a HTML element of a HTML document/ page. in
+                  case of DOM system we can imagine whole HTML document is a
+                  Object. and this object has contains all of HTML element as a
+                  object property at different node.
+               </p>
+            </div>
+         </div>
+         <!-- 1st question end -->
+         <!-- 2nd question start -->
+         <div class="collapse collapse-arrow">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-base font-medium">
+               DOM is Dynamic for CSS id , class, if it's dynamic then how ?
+            </div>
+            <div class="collapse-content">
+               <p>
+                  Yes DOM is completely dynamic for any type of operation by
+                  script handler programming language like as Javascript. to
+                  handle this type of dynamic operation DOM has many function
+                  and method. like cssClassList() can catch all of CSS class
+                  used in HTML document then you could done any CSS operation by
+                  add(), remove(), removeAttribute(), setAttribute() also many
+                  method function.
+               </p>
+            </div>
+         </div>
+         <!-- 2nd question end -->
+
+         <!-- 3rd question start -->
+         <div class="collapse collapse-arrow">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-base font-medium">
+               can we could create dynamically HTML element by DOM ?
+            </div>
+            <div class="collapse-content">
+               <p>
+                  DOM is completely dynamic model system. you can create,
+                  delete, hide, modify existing HTML element, by programming
+                  language. to do this type of operation DOM has many method,
+                  function. like document.create() method can crete any HTML
+                  element in HTML document. we can create any element in any
+                  depth of HTML document & after we can add proper position by
+                  append(), appendChild(), parentNode(), childNode() also many
+                  method function.
+               </p>
+            </div>
+         </div>
+         <!-- 3rd question end -->
+         <!-- 4th question start -->
+         <div class="collapse collapse-arrow">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-base font-medium">
+               how we can select HTML element by DOM ?
+            </div>
+            <div class="collapse-content">
+               <p>
+                  we can select HTML element dynamically by DOM method like
+                  document.getElementById(), document.getElementsByClassName(),
+                  document.getElementsByName(), document.getElementsByTagName()
+                  after selecting any element we can do any type of operation by
+                  programming language.
+               </p>
+            </div>
+         </div>
+         <!-- 4th question end -->
+      </main>
+
+      <footer class="bg-yellow-100 pt-10 pb-10 text-center">
+         <p>All right is reserved by Donate Bangladesh org.</p>
+      </footer>
+      <!-- javascript code file add -->
+      <script src="js/index.js"></script>
+      <script src="js/blog.js"></script>
+   </body>
+</html>
