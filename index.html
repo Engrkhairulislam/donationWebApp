@@ -26,12 +26,12 @@
       <!-- <link rel="stylesheet" href="css/style.css" /> -->
    </head>
 
-   <body class="lexend-sans">
+   <body class="lexend-sans my-0 mx-auto items-center">
       <!-- header section start -->
-      <header id="header-section">
+      <header id="header-section" class="">
          <!-- navBar section start -->
 
-         <nav id="idNavBar" class="flex justify-between bg-lime-50 px-20 py-5">
+         <nav id="idNavBar" class="flex justify-between bg-lime-50 px-20 py-4">
             <!-- blog button of nab bar -->
             <div id="nab_blog-button">
                <button class="btn text-black bg-lime-400">Blog</button>
@@ -51,9 +51,8 @@
 
             <!-- Balance section of nav bar start -->
             <div class="flex gap-2 text-center items-center">
-               <li class="list-none">
-                  <img src="assets/coin.png" alt="coin icon" srcset="" />
-               </li>
+               <img src="assets/coin.png" alt="coin icon" srcset="" />
+
                <h1 id="balance" class="font-medium text-xl">5500</h1>
                <h1 class="font-medium text-xl">BDT</h1>
             </div>
@@ -63,10 +62,12 @@
          <!-- donation button section start -->
          <div
             id="donation-toggole-button-section"
-            class="flex gap-10 items-center text-center justify-center py-5"
+            class="flex gap-10 items-center text-center justify-center pt-7 pb-4"
          >
             <div>
-               <button class="btn text-black bg-lime-400 py-4 px-8">Donation</button>
+               <button class="btn text-black bg-lime-400 py-4 px-8">
+                  Donation
+               </button>
             </div>
             <div>
                <button
@@ -77,11 +78,206 @@
             </div>
          </div>
          <!-- donation button section stop -->
-          <!-- add a horizontal divider -->
-           <div class="divider"></div>
+         <!-- add a horizontal divider -->
+         <div class="divider"></div>
       </header>
       <!-- header section stop-->
 
-      
+      <main id="main-section" class="px-16 mx-auto pt-3 pb-3 space-y-4">
+         <!-- 1st donation post section start -->
+         <div
+            class="flex flex-col md:flex-row gap-4 outline outline-gray-200 outline-1 p-2 rounded-lg"
+         >
+            <!-- image div for left side -->
+            <div class="w-1/2 h-auto shrink-0">
+               <img
+                  class="w-ful h-full shrink-0"
+                  src="assets/noakhali.png"
+                  alt=""
+                  srcset=""
+               />
+            </div>
+
+            <!-- right side info div start -->
+            <div class="space-y-4">
+               <!-- div for donation money show start -->
+               <div
+                  class="inline-flex gap-2 text-center items-center bg-gray-200 p-3 rounded-xl"
+               >
+                  <img src="assets/coin.png" alt="coin icon" srcset="" />
+
+                  <h1 id="balance" class="font-medium text-xl">5500</h1>
+                  <h1 class="font-medium text-xl">BDT</h1>
+               </div>
+               <!-- div for donation money show end -->
+               <h1 class="text-xl font-semibold">
+                  Donate for Flood at Noakhali, Bangladesh
+               </h1>
+               <p class="text-xl font-light">
+                  The recent floods in Noakhali have caused significant damage
+                  to homes infrastructure. Your donation will help provide
+                  essential supplies and to those affected by this disaster.
+                  Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a positive
+                  impact on the lives of those in need.
+               </p>
+
+               <!-- input field to donation  start-->
+               <input
+                  class="w-full h-8 pl-5 outline outline-gray-300 outline-1"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Write Donation Amount"
+               />
+               <!-- input field to donation end-->
+
+               <!-- donate now button start -->
+
+               <button
+                  class="btn bg-lime-400 hover:bg-lime-400 block w-full font-semibold text-xl"
+               >
+                  Donate Now
+               </button>
+
+               <!-- donate now button end -->
+            </div>
+            <!-- right side info div end -->
+         </div>
+         <!-- 1st donation post section stop -->
+
+         <!-- 2nd donation post section start -->
+
+         <div
+            class="flex flex-col md:flex-row gap-4 outline outline-gray-200 outline-1 p-2 rounded-lg"
+         >
+            <!-- image div for left side -->
+            <div class="w-1/2 h-auto shrink-0">
+               <img
+                  class="w-ful h-full shrink-0"
+                  src="assets/feni.png"
+                  alt=""
+                  srcset=""
+               />
+            </div>
+
+            <!-- right side info div start -->
+            <div class="space-y-4">
+               <!-- div for donation money show start -->
+               <div
+                  class="inline-flex gap-2 text-center items-center bg-gray-200 p-3 rounded-xl"
+               >
+                  <img src="assets/coin.png" alt="coin icon" srcset="" />
+
+                  <h1 id="balance" class="font-medium text-xl">5500</h1>
+                  <h1 class="font-medium text-xl">BDT</h1>
+               </div>
+               <!-- div for donation money show end -->
+               <h1 class="text-xl font-semibold">
+                  Donate for Flood Relief in Feni,Bangladesh
+               </h1>
+               <p class="text-xl font-light">
+                  The recent floods in Feni have devastated local communities,
+                  leading to severe disruption and loss. Your generous donation
+                  will help provide immediate aid, including food, clean water,
+                  and medical supplies, to those affected by this calamity.
+                  Together, we can offer crucial support and help rebuild lives
+                  in the aftermath of this disaster. Every contribution counts
+                  towards making a real difference. Please consider donating
+                  today to assist those in urgent need.
+               </p>
+
+               <!-- input field to donation  start-->
+               <input
+                  class="w-full h-8 pl-5 outline outline-gray-300 outline-1"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Write Donation Amount"
+               />
+               <!-- input field to donation end-->
+
+               <!-- donate now button start -->
+
+               <button
+                  class="btn bg-lime-400 hover:bg-lime-400 block w-full font-semibold text-xl"
+               >
+                  Donate Now
+               </button>
+
+               <!-- donate now button end -->
+            </div>
+            <!-- right side info div end -->
+         </div>
+         <!-- 2nd donation post section end -->
+
+         <!-- 3rd donation post section start -->
+         <div
+            class="flex flex-col md:flex-row gap-4 outline outline-gray-200 outline-1 p-2 rounded-lg"
+         >
+            <!-- image div for left side -->
+            <div class="w-1/2 h-auto shrink-0">
+               <img
+                  class="w-ful h-full shrink-0"
+                  src="assets/quota-protest.png"
+                  alt=""
+                  srcset=""
+               />
+            </div>
+
+            <!-- right side info div start -->
+            <div class="space-y-4">
+               <!-- div for donation money show start -->
+               <div
+                  class="inline-flex gap-2 text-center items-center bg-gray-200 p-3 rounded-xl"
+               >
+                  <img src="assets/coin.png" alt="coin icon" srcset="" />
+
+                  <h1 id="balance" class="font-medium text-xl">5500</h1>
+                  <h1 class="font-medium text-xl">BDT</h1>
+               </div>
+               <!-- div for donation money show end -->
+               <h1 class="text-xl font-semibold">
+                  Aid for Injured in the Quota Movement
+               </h1>
+               <p class="text-xl font-light">
+                  The recent Quota movement has resulted in numerous injuries
+                  and significant hardship for many individuals. Your support is
+                  crucial in providing medical assistance, rehabilitation, and
+                  necessary supplies to those affected. By contributing, you
+                  help ensure that injured individuals receive the care and
+                  support they need during this challenging time. Every donation
+                  plays a vital role in alleviating their suffering and aiding
+                  in their recovery. Please consider making a donation to
+                  support these brave individuals in their time of need.
+               </p>
+
+               <!-- input field to donation  start-->
+               <input
+                  class="w-full h-8 pl-5 outline outline-gray-300 outline-1"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Write Donation Amount"
+               />
+               <!-- input field to donation end-->
+
+               <!-- donate now button start -->
+
+               <button
+                  class="btn bg-lime-400 hover:bg-lime-400 block w-full font-semibold text-xl"
+               >
+                  Donate Now
+               </button>
+
+               <!-- donate now button end -->
+            </div>
+            <!-- right side info div end -->
+         </div>
+         <!-- 3rd donation post section stop -->
+      </main>
+      <footer class="bg-yellow-100 pt-10 pb-10 text-center">
+         <p>All right is reserved by Donate Bangladesh org.</p>
+      </footer>
    </body>
 </html>
