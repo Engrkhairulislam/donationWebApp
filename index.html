@@ -58,7 +58,7 @@
             <div class="flex gap-2 text-center items-center">
                <img src="assets/coin.png" alt="coin icon" srcset="" />
 
-               <h1 id="balance" class="font-medium text-xl">5500</h1>
+               <h1 id="user-balance" class="font-medium text-xl">5500</h1>
                <h1 class="font-medium text-xl">BDT</h1>
             </div>
             <!-- Balance section of nav bar start -->
@@ -110,7 +110,9 @@
                >
                   <img src="assets/coin.png" alt="coin icon" srcset="" />
 
-                  <h1 id="balance" class="font-medium text-xl">5500</h1>
+                  <h1 id="balance-noakhali-flood" class="font-medium text-xl">
+                     7000
+                  </h1>
                   <h1 class="font-medium text-xl">BDT</h1>
                </div>
                <!-- div for donation money show end -->
@@ -126,25 +128,30 @@
                   impact on the lives of those in need.
                </p>
 
-               <!-- input field to donation  start-->
-               <input
-                  class="w-full h-8 pl-5 outline outline-gray-300 outline-1"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Write Donation Amount"
-               />
-               <!-- input field to donation end-->
-
-               <!-- donate now button start -->
-
-               <button
-                  class="btn bg-lime-400 hover:bg-lime-400 block w-full font-semibold text-xl"
-               >
-                  Donate Now
-               </button>
-
-               <!-- donate now button end -->
+               <!-- input from to donation  start-->
+               <div class="card bg-base-100 w-full">
+                  <form class="card-body">
+                     <div id="errorTextShow" class="form-control">
+                        <input
+                           id="donate-amount-noakhali"
+                           type="text"
+                           placeholder="Write Donation Amount"
+                           class="input input-bordered"
+                           required
+                        />
+                        <p id="error-message" class="text-red-700 text-sm"></p>
+                     </div>
+                     <div class="form-control mt-2">
+                        <button
+                           id="btn-donate-amount-noakhali"
+                           class="btn bg-lime-400"
+                        >
+                           Donate Now
+                        </button>
+                     </div>
+                  </form>
+               </div>
+               <!-- input from to donation  end-->
             </div>
             <!-- right side info div end -->
          </div>
@@ -173,7 +180,9 @@
                >
                   <img src="assets/coin.png" alt="coin icon" srcset="" />
 
-                  <h1 id="balance" class="font-medium text-xl">5500</h1>
+                  <h1 id="balance-feni-flood" class="font-medium text-xl">
+                     5500
+                  </h1>
                   <h1 class="font-medium text-xl">BDT</h1>
                </div>
                <!-- div for donation money show end -->
@@ -191,25 +200,33 @@
                   today to assist those in urgent need.
                </p>
 
-               <!-- input field to donation  start-->
-               <input
-                  class="w-full h-8 pl-5 outline outline-gray-300 outline-1"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Write Donation Amount"
-               />
-               <!-- input field to donation end-->
-
-               <!-- donate now button start -->
-
-               <button
-                  class="btn bg-lime-400 hover:bg-lime-400 block w-full font-semibold text-xl"
-               >
-                  Donate Now
-               </button>
-
-               <!-- donate now button end -->
+               <!-- input from to donation  start-->
+               <div class="card bg-base-100 w-full">
+                  <form class="card-body">
+                     <div class="form-control">
+                        <input
+                           id="donate-amount-feni"
+                           type="number"
+                           placeholder="Write Donation Amount"
+                           class="input input-bordered"
+                           required
+                        />
+                        <p
+                           id="error-message-feni-input-field"
+                           class="text-red-700 text-sm"
+                        ></p>
+                     </div>
+                     <div class="form-control mt-2">
+                        <button
+                           id="btn-donate-amount-feni"
+                           class="btn bg-lime-400"
+                        >
+                           Donate Now
+                        </button>
+                     </div>
+                  </form>
+               </div>
+               <!-- input from to donation  end-->
             </div>
             <!-- right side info div end -->
          </div>
@@ -238,7 +255,9 @@
                >
                   <img src="assets/coin.png" alt="coin icon" srcset="" />
 
-                  <h1 id="balance" class="font-medium text-xl">5500</h1>
+                  <h1 id="balance-quota-movement" class="font-medium text-xl">
+                     5500
+                  </h1>
                   <h1 class="font-medium text-xl">BDT</h1>
                </div>
                <!-- div for donation money show end -->
@@ -257,25 +276,29 @@
                   support these brave individuals in their time of need.
                </p>
 
-               <!-- input field to donation  start-->
-               <input
-                  class="w-full h-8 pl-5 outline outline-gray-300 outline-1"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Write Donation Amount"
-               />
-               <!-- input field to donation end-->
-
-               <!-- donate now button start -->
-
-               <button
-                  class="btn bg-lime-400 hover:bg-lime-400 block w-full font-semibold text-xl"
-               >
-                  Donate Now
-               </button>
-
-               <!-- donate now button end -->
+               <!-- input from to donation  start-->
+               <div class="card bg-base-100 w-full">
+                  <form class="card-body">
+                     <div class="form-control">
+                        <input
+                           id="donate-amount-quota-movement"
+                           type="text"
+                           placeholder="Write Donation Amount"
+                           class="input input-bordered"
+                           required
+                        />
+                     </div>
+                     <div class="form-control mt-2">
+                        <button
+                           id="btn-donate-quota-movement"
+                           class="btn bg-lime-400"
+                        >
+                           Donate Now
+                        </button>
+                     </div>
+                  </form>
+               </div>
+               <!-- input from to donation  end-->
             </div>
             <!-- right side info div end -->
          </div>
@@ -286,5 +309,7 @@
       </footer>
       <!-- javascript code file add -->
       <script src="js/index.js"></script>
+      <script src="js/utilites.js"></script>
+      <script src="js/donation.js"></script>
    </body>
 </html>
