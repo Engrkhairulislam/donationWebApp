@@ -33,4 +33,3 @@ const getInputElementValueById = function (balancePlaceId) {
 //    balanceQuotaMovement,
 //    userBalance,
 // );
-

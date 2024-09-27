@@ -28,7 +28,7 @@
 
    <body class="lexend-sans my-0 mx-auto items-center">
       <!-- header section start -->
-      <header id="header-section" class="sticky top-0">
+      <header id="header-section" class="sticky top-0 z-10">
          <!-- navBar section start -->
 
          <nav
@@ -134,12 +134,15 @@
                      <div id="errorTextShow" class="form-control">
                         <input
                            id="donate-amount-noakhali"
-                           type="text"
+                           type="number"
                            placeholder="Write Donation Amount"
                            class="input input-bordered"
                            required
                         />
-                        <p id="error-message" class="text-red-700 text-sm"></p>
+                        <p
+                           id="error-message-noakhali"
+                           class="text-red-700 text-sm"
+                        ></p>
                      </div>
                      <div class="form-control mt-2">
                         <button
@@ -282,11 +285,15 @@
                      <div class="form-control">
                         <input
                            id="donate-amount-quota-movement"
-                           type="text"
+                           type="number"
                            placeholder="Write Donation Amount"
                            class="input input-bordered"
                            required
                         />
+                        <p
+                           id="error-message-qouta-movement-input-field"
+                           class="text-red-700 text-sm"
+                        ></p>
                      </div>
                      <div class="form-control mt-2">
                         <button
